@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Connect - About Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .about .developer {
+            width: 200px;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .about .developer h3 {
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1.5rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .about .developer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>About Health Connect</h1>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="developer">
+            <h3>Nathan Balos</h3>
+            <p>Nathan is a senior at the University of Arizona studying Computer Science. He is passionate about building web applications that make a difference in people's lives. In his free time, Nathan enjoys hiking and playing basketball.</p>
+        </div>
+        <div class="developer">
+            <h3>Colton Aouidad</h3>
+            <p>Colton is a recent graduate from the University of Arizona with a degree in Computer Science. He has experience in full-stack development and is committed to creating high-quality software. In his free time, Colton enjoys playing video games and watching sports.</p>
+        </div>
+        <div class="developer">
+            <h3>Wesley Rhoads</h3>
+            <p>Wesley is a junior at the University of Arizona studying Computer Science. He is skilled in front-end development and is dedicated to creating intuitive and user-friendly interfaces. In his free time, Wesley enjoys playing guitar and listening to music.</p>
+        </div>
+        <div class="developer">
+            <h3>Aidan Gazdecki</h3>
+            <p>Aidan is a senior at the University of Arizona studying Computer Science. He has experience in back-end development and is committed to building scalable and efficient software. In his free time, Aidan enjoys playing soccer and reading.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Health Connect. All rights reserved.
+    </footer>
+
+</body>
+</html>
