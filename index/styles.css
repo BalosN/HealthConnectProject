@@ -1,67 +1,62 @@
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background-color: #4caf50;
-    padding: 20px;
-    text-align: center;
-}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-header h1 {
-    color: white;
-    font-size: 24px;
-}
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
 
-nav {
-    background-color: #333;
-    padding: 10px;
-}
+            header h1 {
+                margin: 0;
+            }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+        /* Navigation */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+            }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+                nav a:hover {
+                    background-color: #555;
+                }
 
-main {
-    padding: 20px;
-}
+        /* Main Content */
+        main {
+            padding: 2rem;
+        }
 
-.healthcare-background {
-    background-image: url('https://images.unsplash.com/photo-1518806118471-8f162f1e10fb');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1.5rem;
+        }
 
-.healthconnect-logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-}
-
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    color: white;
-    margin: 0;
-}
+        /* Media Queries */
+        @media (max-width: 600px) {
+            nav a {
+                padding: 0.5rem;
+            }
+        }
