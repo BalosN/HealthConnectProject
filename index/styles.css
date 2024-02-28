@@ -20,7 +20,8 @@ header {
 }
 .logo {
        display: block;
-       align:left;
+       position: absolute;
+       left: 20px;
        padding: 0px 0px 0px 0px;
        border: 0;
        margin: 0;
