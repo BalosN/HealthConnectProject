@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Connect - Services </title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            display: block;
+            position: absolute;
+            left: 5%;
+            max-width: 10%;
+            height: auto;
+            border-radius: 25%;
+        }
+
+        .QRcode1 {
+            width: 25%;
+            height: 25%;
+        }
+
+        .QRcode2 {
+            width: 25%;
+            height: 25%;
+        }
+
+        .lyft {
+            text-align: left;
+            display: block;
+        }
+
+        .uber {
+            text-align: center;
+            display: block;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+            }
+
+                nav a:hover {
+                    background-color: #555;
+                }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1.5rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .about .developer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="HealthConnectLogo.png" alt="Health Connect logo" class="logo">
+        <h1>Health Connect Services </h1>
+    </header>
+    <nav>
+        <a href="website.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Google Maps Heading -->
+    <section class="info">
+        <h2>Find your provider!</h2>
+        <p>
+            Use our built-in Google Maps to find providers close to you!
+        </p>
+    </section>
+
+    <!-- Google Maps -->
+    <div id="map" style="height: 450px; width: 600px;"></div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 33.514803178678996, lng: -112.14622963752377 },
+                zoom: 8
+            });
+
+            var input = document.getElementById('pac-input');
+            var searchBox = new google.maps.places.SearchBox(input);
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            map.addListener('bounds_changed', function () {
+                searchBox.setBounds(map.getBounds());
+            });
+
+            var markers = [];
+            searchBox.addListener('places_changed', function () {
+                var places = searchBox.getPlaces();
+
+                if (places.length == 0) {
+                    return;
+                }
+
+                markers.forEach(function (marker) {
+                    marker.setMap(null);
+                });
+                markers = [];
+
+                var bounds = new google.maps.LatLngBounds();
+                places.forEach(function (place) {
+                    if (!place.geometry) {
+                        console.log("Returned place contains no geometry");
+                        return;
+                    }
+                    var icon = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    markers.push(new google.maps.Marker({
+                        map: map,
+                        icon: icon,
+                        title: place.name,
+                        position: place.geometry.location
+                    }));
+
+                    if (place.geometry.viewport) {
+                        bounds.union(place.geometry.viewport);
+                    } else {
+                        bounds.extend(place.geometry.location);
+                    }
+                });
+                map.fitBounds(bounds);
+            });
+        }
+
+        function getDirections() {
+            var input = document.getElementById('pac-input').value;
+            window.open('https://www.google.com/maps/dir//' + input, '_blank');
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcyVUWG4GByf4vpdaYS5gxkcOU2-2WJ7U&libraries=places&callback=initMap" async defer></script>
+
+    <!-- Address Search Bar -->
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+    <!-- Get Directions Button -->
+    <button onclick="getDirections()">Get Directions</button>
+
+    <!-- RideShare linking through GogoGrandparent -->
+    <section class="info">
+        <h2>GogoGrandparent</h2>
+        <p>
+            At Health Connect, we understand that transportation can be a major barrier for older adults in accessing healthcare services. That's why we're proud to partner with GogoGrandparent to offer on-demand Uber and Lyft rides to our clients.
+        </p>
+        <p>
+            GogoGrandparent is a transportation service that allows seniors to book rides with Uber and Lyft using a regular phone, without the need for a smartphone or app. This makes it easy for older adults to get to their appointments, go shopping, or visit family and friends, without having to worry about the hassle of booking rides online.
+        </p>
+        <p>
+            To set up a ride, simply call <a href="tel:+18554646872">1 (855) 464-6872 ext 65562</a> and an operator will help you schedule a ride. You can choose to use Uber or Lyft, and a driver will be dispatched to your location. GogoGrandparent will send you a text or call to confirm your ride, and you can track the driver's progress in real-time.
+        </p>
+        <h3>
+            Alternatively, scan these QR codes with your phone's camera to link to the Uber and Lyft apps themselves, or follow the appropriate links.
+        </h3>
+        <img src="LyftQRcode.png" alt="LyftQRcode" class="QRcode1">
+        <img src="UberQRcode.png" alt="UberQRcode" class="QRcode2">
+        <p>
+            <a href="https://apps.apple.com/us/app/lyft/id529379082" class="lyft">Lyft on App Store</a><a href="https://apps.apple.com/us/app/uber-request-a-ride/id368677368" class="uber">Uber on App Store</a>
