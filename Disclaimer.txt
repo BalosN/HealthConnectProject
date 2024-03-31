@@ -16,3 +16,26 @@ The Site cannot and does not contain health or medical advice. The health or med
 Liability Disclaimer
 Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.
 
+Content Amendment Disclaimer
+"Health Connect reserves the right to modify, remove, or add to the information provided on https://balosn.github.io/HealthConnectProject/index/website.html at any time without prior notice. This includes adjustments to our articles, services, and any other website content to ensure up-to-date and accurate information."
+
+User Responsibility Disclaimer
+"The information on Health Connect is intended for general informational purposes only. It is the user's responsibility to assess the accuracy and reliability of the information on the site before making any decisions based on such information, especially when related to health and wellness."
+
+Testimonials and Success Stories Disclaimer
+"Testimonials on our site are genuine accounts of individual experiences with our services. They reflect the personal opinions and results of those individuals only and may not represent the typical experiences or outcomes for other users. Success stories are provided for motivational purposes and should not be construed as guarantees of specific results."
+
+Affiliate Links and Advertising Disclaimer
+"Health Connect may feature affiliate links and advertisements that result in commission or profit for our site without additional cost to you. We only endorse products or services that we believe, based on our expertise, are worthy of such endorsement. Any product claim, statistic, quote, or other representation about a product or service should be verified with the manufacturer, provider, or party in question."
+
+Privacy Policy Agreement
+"Health Connect is committed to protecting your privacy. Our Privacy Policy, accessible from our website, outlines how we collect, use, protect, and disclose information obtained from users. We adhere to major privacy laws and frameworks, ensuring your data is handled responsibly and transparently."
+
+Age Restriction Disclaimer
+"Access to and use of the Health Connect website and its services are intended solely for individuals 18 years of age or older. By using our website, you represent and warrant that you are of legal age to form a binding contract with Health Connect and meet all of the foregoing eligibility requirements."
+
+Fair Use Disclaimer
+"Health Connect may contain copyrighted material not always specifically authorized by the copyright owner. We make such material available for educational purposes, to advance understanding of health, wellness, and scientific issues. We believe this constitutes a 'fair use' of any such copyrighted material as provided for in section 107 of the US Copyright Law."
+
+Terms of Service Agreement
+"By accessing or using the Health Connect website, you agree to be bound by our Terms of Service. These terms govern your access to and use of the website, including any content, functionality, and services offered. We reserve the right to terminate or suspend access to our site for any user who violates these terms."
