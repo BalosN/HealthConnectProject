@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Connect - Services </title>
+    <title>Health Connect - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Embedding additional styles to improve the existing design */
+        .info {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff; /* Clean white background */
+            margin: 2rem auto; /* Add margin to top and bottom for spacing */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            max-width: 800px; /* Limiting the width for better readability */
+            border-radius: 8px; /* Slightly rounded corners for a modern look */
         }
 
-        /* Header */
-        header {
-            background-color: #8E4585; /* dark purple */
+        .info h2, .info h3, .info p {
+            color: #333; /* Ensuring text is black for readability */
+        }
+
+        .info h2 {
+            margin-bottom: 1rem; /* Space after the main heading */
+            font-size: 1.75em; /* Larger font size for main heading */
+        }
+
+        .info h3 {
+            margin-bottom: 0.5rem; /* Space after the subheading */
+            font-size: 1.25em; /* Slightly larger font size for subheading */
+        }
+
+        .info a {
+            color: #8E4585; /* Theme color for links for consistency */
+            text-decoration: none; /* No underline on links for a cleaner look */
+        }
+
+        .info a:hover {
+            text-decoration: underline; /* Underline on hover for better user experience */
+        }
+
+        .info p {
+            margin-top: 1rem; /* Space before the paragraph text */
+            font-size: 1em; /* Standard font size for paragraph */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333; /* Dark footer for contrast */
             color: white;
             text-align: center;
-            padding: 2rem 2rem;
+            padding: 1rem;
+            margin-top: 2rem; /* Added space before the footer */
         }
 
+        footer a {
+            color: #FF0080; /* Light magenta for footer links */
+            text-decoration: none; /* No underline on links */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover for links */
+        }
+        
         /* Media Queries */
         @media (max-width: 600px) {
-            .about .developer {
-                width: 100%;
+            .info {
+                margin: 1rem; /* Reduced margin on smaller screens */
             }
         }
     </style>
@@ -35,30 +78,27 @@
         <img src="HealthConnectLogo.png" alt="Health Connect logo" class="logo">
         <h1>Contact Health Connect</h1>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <a href="website.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
     </nav>
 
-    <!-- Contact Heading -->
+    <!-- Contact Section -->
     <section class="info">
-        <h2>If you have any questions, concerns or comments feel free to contact us! </h2>
-        <h3>
-            Email: <a href="mailto: healthconnectcontact@yahoo.com">HealthConnectContact@Yahoo.com</a>
-            <br />
-            Phone: No phone number currently available
-        </h3>
-        <p>
-            This is a new project created by four college students, response times will vary.
-        </p>
+        <h2>If you have any questions, concerns or comments feel free to contact us!</h2>
+        <h3>Email: <a href="mailto:HealthConnectContact@Yahoo.com">HealthConnectContact@Yahoo.com</a></h3>
+        <h3>Phone: No phone number currently available</h3>
+        <p>This is a new project created by four college students, response times will vary.</p>
     </section>
 
     <!-- Footer -->
     <footer>
         &copy; 2024 Health Connect. All rights reserved.
-        <p><a href="../PrivacyPolicy.txt" download>Privacy Policy</a></p>
+        <p><a href="PrivacyPolicy.txt" download>Privacy Policy</a></p>
     </footer>
 
 </body>
