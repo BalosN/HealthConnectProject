@@ -1,51 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Connect - About Us</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background-color: #8E4585; /* dark purple */
-            color: white;
-            text-align: center;
-            padding: 2rem 2rem;
-        }
-
-        /* About Section */
-        .about {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-            .about .developer {
-                width: 200px;
-                margin: 1rem;
-                padding: 1rem;
-                border: 1px solid #333;
-                border-radius: 5px;
-            }
-
-                .about .developer h3 {
-                    margin-top: 0;
-                }
-
-        /* Media Queries */
-        @media (max-width: 600px) {
-            .about .developer {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -54,12 +13,15 @@
         <img src="HealthConnectLogo.png" alt="Health Connect logo" class="logo">
         <h1>About Health Connect</h1>
     </header>
+    
+    <!-- Navigation -->
     <nav>
-        <a href="website.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact Us</a>
     </nav>
+    
     <!-- About Section -->
     <section class="about">
         <div class="developer">
@@ -83,9 +45,10 @@
     <!-- Footer -->
     <footer>
         &copy; 2024 Health Connect. All rights reserved.
-        <p><a href="../PrivacyPolicy.txt" download>Privacy Policy</a></p>
+        <p><a href="PrivacyPolicy.txt" download>Privacy Policy</a></p>
     </footer>
 
 </body>
 </html>
+
 
