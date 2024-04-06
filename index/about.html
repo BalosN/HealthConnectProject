@@ -4,24 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Connect - About Us</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #8E4585;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #8E4585;
+        }
+
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .about .developer {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .about .developer h3 {
+            margin-top: 0;
+            color: #8E4585;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #8E4585;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <!-- Header -->
     <header>
         <img src="HealthConnectLogo.png" alt="Health Connect logo" class="logo">
         <h1>About Health Connect</h1>
     </header>
-    
+
     <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    
+
     <!-- About Section -->
     <section class="about">
         <div class="developer">
@@ -47,7 +135,6 @@
         &copy; 2024 Health Connect. All rights reserved.
         <p><a href="PrivacyPolicy.txt" download>Privacy Policy</a></p>
     </footer>
-
 </body>
 </html>
 
