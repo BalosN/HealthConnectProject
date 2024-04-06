@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Connect - Services </title>
+    <title>Health Connect - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Set a light grey background color */
+            color: #333; /* Default text color */
         }
 
         /* Header */
@@ -18,12 +22,85 @@
             color: white;
             text-align: center;
             padding: 2rem 2rem;
+            position: relative; /* Needed for logo positioning */
+        }
+
+        .logo {
+            display: block;
+            position: absolute;
+            left: 5%;
+            max-width: 100px; /* Adjust the size of the logo */
+            height: auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000; /* Keep the navbar consistent */
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #FF0080; /* Light magenta */
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #9B59B6; /* Medium purple */
+        }
+
+        /* Contact Section */
+        .info {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('images/HealthConnectLogo.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Change text color for readability */
+        }
+
+        .info a {
+            color: #FFDD00; /* Change email link color for better visibility */
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333; /* dark gray */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #FF0080; /* Light magenta */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* Media Queries */
         @media (max-width: 600px) {
-            .about .developer {
-                width: 100%;
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .logo {
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     </style>
@@ -39,20 +116,15 @@
         <a href="website.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
     </nav>
 
     <!-- Contact Heading -->
     <section class="info">
-        <h2>If you have any questions, concerns or comments feel free to contact us! </h2>
-        <h3>
-            Email: <a href="mailto: healthconnectcontact@yahoo.com">HealthConnectContact@Yahoo.com</a>
-            <br />
-            Phone: No phone number currently available
-        </h3>
-        <p>
-            This is a new project created by four college students, response times will vary.
-        </p>
+        <h2>If you have any questions, concerns or comments feel free to contact us!</h2>
+        <h3>Email: <a href="mailto:HealthConnectContact@Yahoo.com">HealthConnectContact@Yahoo.com</a></h3>
+        <h3>Phone: No phone number currently available</h3>
+        <p>This is a new project created by four college students, response times will vary.</p>
     </section>
 
     <!-- Footer -->
